@@ -1,0 +1,52 @@
+[
+    { "msgs": ["Hello 宝宝，想我没呀？"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["知道下周二是什么日子吗？"],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["三周年",  "纪念日"],
+                "rejectKeyTexts": [],
+                "rejectHitTexts": [
+                    "给你提示一下，今天是2023年11月11号喔",
+                    "这都答不出来吗，我要生气了。",
+                    "好吧，看在你应该不是故意的份上告诉你吧，下周二就是我们三周年纪念日呀～"
+                ]
+            }
+        }
+    },
+    {
+        "msgs": ["知道我现在在想什么吗？"],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["想我", "我", "女朋友", "想女朋友", "宝宝"],
+                "rejectKeyTexts": ["不知道"],
+                "rejectHitTexts": [
+                    "给你个提示，是个人～",
+                    "你是不是是故意的 哼"
+                ]
+            }
+        }
+    },
+    {
+        "msgs": ["我现在当然是在想打游戏", "我现在当然是在想你啦～"],
+        "msgInputSpeed": 80
+    },
+    { "msgs": ["什么你才不信？"], "msgInputSpeed": 100 },
+    { "msgs": ["喔还没收到任何礼物？"], "msgInputSpeed": 140 },
+    { "msgs": ["而且人也没到！（逐渐不开心😭）"], "msgInputSpeed": 180 },
+    { "msgs": ["别别别，别生气，我可是有所准备的。"], "msgInputSpeed": 80 },
+    { "msgs": ["礼物已经在路上了喔，人也会到的呢。"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["而且还有很多想对你说的话，写成了一封信给你。"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["<letter src='options/production/letter.json'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    },
+    { "msgs": ["怎么样？全是感情，毫无文采，嘻嘻"] },
+]
